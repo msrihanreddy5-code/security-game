@@ -1,0 +1,88 @@
+body {
+    background: #0d1117;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Difficulty Screen */
+#difficultyScreen {
+    background: #161b22;
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #8256ff;
+}
+
+.diffBtn {
+    width: 120px;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    background: #8256ff;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Game Elements */
+#topBar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid #238636;
+    border-radius: 10px;
+    background: #161b22;
+    position: relative;
+    overflow: hidden;
+}
+
+#fallingMessage {
+    position: absolute;
+    width: 300px;
+    padding: 15px;
+    margin: auto;
+    left: 0; right: 0;
+    top: -100px;
+    background: #222;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+#buttons button {
+    width: 120px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#allowBtn { background: #238636; color: white; }
+#blockBtn { background: #da3633; color: white; }
+#reportBtn { background: #8256ff; color: white; }
+
+#restartBtn {
+    display: none;
+    padding: 12px 20px;
+    background: #ffb300;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#resultMsg {
+    font-size: 26px;
+}
