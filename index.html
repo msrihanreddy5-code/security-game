@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Attack Protector – Difficulty Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛡️ Cyber Attack Protector</h1>
+
+<!-- Difficulty Selection Screen -->
+<div id="difficultyScreen">
+    <h2>Select Difficulty</h2>
+    <button class="diffBtn" data-level="easy">🟢 Easy</button>
+    <button class="diffBtn" data-level="medium">🟡 Medium</button>
+    <button class="diffBtn" data-level="hard">🔴 Hard</button>
+</div>
+
+<!-- Actual Game Area -->
+<div id="gameContainer" style="display: none;">
+    <div id="topBar">
+        <p id="score">Score: 0</p>
+        <p id="lives">❤️ Lives: 3</p>
+        <p id="timer">⏳ Time: 10s</p>
+        <p id="levelText">Level: Easy</p>
+    </div>
+
+    <div id="gameArea">
+        <div id="fallingMessage"></div>
+    </div>
+
+    <div id="buttons">
+        <button id="allowBtn">👍 ALLOW</button>
+        <button id="blockBtn">🛑 BLOCK</button>
+        <button id="reportBtn">⚠️ REPORT</button>
+    </div>
+
+    <h2 id="resultMsg"></h2>
+    <button id="restartBtn">Restart Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
